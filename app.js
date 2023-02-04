@@ -8,7 +8,7 @@ const bcrypt = require("bcryptjs")
 dotenv.config({ path: './.env'})
 
 const app = express();
-const port = 5000
+const port = 5432
 
 const db = mysql.createConnection({
     host: process.env.DATABASE_HOST,
